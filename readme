@@ -1,0 +1,29 @@
+npm start
+
+truffle migrate --reset --network goerli
+truffle run verify SMS --network goerli
+Verifying SMS
+Pass - Verified: https://goerli.etherscan.io/address/0xF56E75Ea8599577f8Cd8db879a880C78f231F616#code
+Successfully verified 1 contract(s).
+
+## API
+1. {{host}}/deployContract
+{
+    "success": true,
+    "data": {
+        "message": "The Contract is successfully deployed",
+        "ContractId": "0.0.48516849"
+    }
+}
+
+2. {{host}}/addStudentDetails
+{
+    "success": true,
+    "data": {
+        "message": "student details are successfully added to Hedera network",
+        "transactionId": "0.0.19053020@1665031423.145306846",
+        "DGURL": "https://testnet.dragonglass.me/transactions/00190530201665031423145306846",
+        "HURL": "https://Namescan.io/#/testnet/transaction/0.0.19053020-1665031423-145306846",
+        "MirrorNodeApi": "https://testnet.mirrornode.hedera.com/api/v1/transactions/0.0.19053020-1665031423-145306846"
+    }
+}
